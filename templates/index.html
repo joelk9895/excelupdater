@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Excel Editor For Papa</h1>
+    <form method="POST" action="/result">
+        <div class="input-field">
+            <input type="text" name="columnidentifier" required="" autocomplete="off">
+            <span>Column Name</span>
+            <i></i>
+        </div>
+        <div class="input-field">
+            <input type="text" name="head" required="" autocomplete="off">
+            <span>Start</span>
+            <i></i>
+        </div>
+        <div class="input-field">
+            <input type="text" name="foot" required="" autocomplete="off">
+            <span>End</span>
+            <i></i>
+        </div>
+        <div class="input-field">
+            <input type="text" name="multiplier" required="" autocomplete="off">
+            <span>Percentage</span>
+            <i></i>
+        </div>
+        <input type="submit" value="Submit" name="" class="btn" />
+
+    </form>
+    <p>Instruction: Rename the excel file into input and move to the folder containing app.py</p>
+</body>
+</html>
